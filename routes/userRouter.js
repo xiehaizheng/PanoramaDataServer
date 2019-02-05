@@ -20,7 +20,7 @@ userRouter.post('/signup', (req, res, next) => {
   //   "userType": "(此处不接受用户输入，强制为0，即普通用户)",
   //   "options": {
   //       "gender": "gender",
-  //       "dob": "1990/01/01",
+  //       "dob": "1990/07/01",
   //       "email": "xxx@xxx.xxx",
   //       "addr": "地址",
   //       "phone": "+86 xxxxxx",

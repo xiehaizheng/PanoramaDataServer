@@ -1,5 +1,6 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
+var videoSchema = require('./videos').videoSchema;
 var passportLocalMongoose = require('passport-local-mongoose');
 
 var userSchema = new Schema({
@@ -13,9 +14,23 @@ var userSchema = new Schema({
     // 用户昵称
     nickname: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
+    // 收藏视频
+    collections: [videoSchema],
+    // 上传视频
+    channels: [videoSchema],
     options: {
+        // 头像
+        icon: {
+            type: String
+        },
+        // 个人简介
+        description: {
+            type: String,
+            default: '暂无信息'
+        },
         // 性别
         // 0 - 未知; 1 - 男; 2 - 女
         gender: {
@@ -27,7 +42,8 @@ var userSchema = new Schema({
             type: Date
         },
         email: {
-            type: String
+            type: String,
+            unique: true
         },
         // 地址
         addr: {
@@ -45,7 +61,7 @@ var userSchema = new Schema({
         qq: {
             type: String
         }
-    }    
+    }
 }, {
     timestamps: true
 });

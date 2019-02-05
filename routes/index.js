@@ -6,7 +6,7 @@ const indexRouter = express.Router();
 /* GET home page. */
 indexRouter.route('/test')
 .get(authenticate.verifyUser, (req, res, next) => {
-  res.render('index', { title: 'Express' });
+  res.end('普通用户，你好！');
 })
 .post(authenticate.verifyUser, authenticate.verifyVIP, (req, res, next) => {
   res.end('尊敬的会员，您好！');

@@ -1,5 +1,6 @@
 {
-    "注册": {
+    "注册":
+    {
         "username": "pano",
         "password": "123",
         "nickname": "伟开全景",
@@ -15,8 +16,18 @@
             "qq": "1010101010"
         }
     },
-    "登录": {
+    "登录":
+    {
         "username": "pano",
         "password": "123"
+    },
+    "上传视频":
+    {
+        "videoName": "视频名称",
+        "videoType": "视频类型",
+        "res": "视频流来源",
+        "thumbnail": "缩略图地址",
+        "author": "上传者",
+        "description": "视频描述"
     }
 }
