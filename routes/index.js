@@ -1,9 +1,15 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const bodyParser = require('body-parser');
+const authenticate = require('./authenticate');
+const indexRouter = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+indexRouter.route('/test')
+.get(authenticate.verifyUser, (req, res, next) => {
   res.render('index', { title: 'Express' });
-});
+})
+.post(authenticate.verifyUser, authenticate.verifyVIP, (req, res, next) => {
+  res.end('尊敬的会员，您好！');
+})
 
-module.exports = router;
+module.exports = indexRouter;

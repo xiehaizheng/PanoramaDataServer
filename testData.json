@@ -1,0 +1,22 @@
+{
+    "注册": {
+        "username": "pano",
+        "password": "123",
+        "nickname": "伟开全景",
+        "userType": 1,
+        "options": {
+            "gender": 1,
+            "dob": "1990/07/01",
+            "email": "xxx@xxx.xxx",
+            "addr": "北京市朝阳区平乐园100号",
+            "phone": "+86 xxxxxx",
+            "tel": "010-12345678",
+            "wechat": "100000",
+            "qq": "1010101010"
+        }
+    },
+    "登录": {
+        "username": "pano",
+        "password": "123"
+    }
+}
