@@ -8,8 +8,11 @@ indexRouter.route('/test')
 .get(authenticate.verifyUser, (req, res, next) => {
   res.end('普通用户，你好！');
 })
-.post(authenticate.verifyUser, authenticate.verifyVIP, (req, res, next) => {
-  res.end('尊敬的会员，您好！');
+.post(authenticate.verifyUser, authenticate.verifyAuthor, (req, res, next) => {
+  res.end('尊敬的上传者，您好！');
 })
+.put(authenticate.verifyUser, authenticate.verifyAdmin, (req, res, next) => {
+  res.end('尊敬的管理员，您好！');
+});
 
 module.exports = indexRouter;

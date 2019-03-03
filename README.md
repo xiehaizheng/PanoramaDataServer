@@ -1,4 +1,7 @@
 # 	全景直播平台系统产品需求文档
+## 目录
+
+[TOC]
 
 ## 需求分析
 
@@ -336,9 +339,21 @@
 // 未知错误 "statusCode": 2
 ```
 
-
-
 #### 7. /users/:userId/videos/:videoId
+
+**GET - 获取视频信息**
+
+**Response**
+
+```json
+{
+    "videoName": "视频名称",
+    "videoType": "视频类型",
+    "res": "视频流来源",
+    "thumbnail": "缩略图地址",
+    "description": "视频描述"
+}
+```
 
 **PUT - 更新视频信息**
 
@@ -374,8 +389,6 @@
 // 视频不存在 "statusCode": 2
 // 未知错误 "statusCode": 3
 ```
-
-#### 
 
 **DELETE - 删除视频**
 
@@ -429,13 +442,82 @@
 }
 ```
 
+#### 9. /users/:userId/history
 
+**GET - 获取用户播放记录**
 
-#### 9. /users/:userId/upload - 上传视频
+**Response**
+
+```json
+// 获取用户播放记录成功
+{
+    "success": true,
+    "statusCode": 0,
+    "msg": "返回信息",
+    "content": [
+        {
+            "videoId": "videoId",
+            "videoName": "videoName",
+            "author": "author",
+            "thumbnail": "缩略图地址"
+        }
+        ...
+    ]
+}
+
+// 用户不匹配
+{
+    "success": false,
+    "statusCode": 1,
+    "msg": "返回信息"
+}
+
+// 未知错误 "statusCode": 2
+```
+
+**DELETE - 删除用户播放记录**
+
+**Request**
+
+```json
+{
+    "videoId": "videoId"
+}
+```
+
+**Response**
+
+```json
+// 删除用户播放记录成功
+{
+    "success": true,
+    "statusCode": 0,
+    "msg": "返回信息"
+}
+
+// 用户不匹配
+{
+    "success": false,
+    "statusCode": 1,
+    "msg": "返回信息"
+}
+
+// 未知错误 "statusCode": 2
+```
 
 #### 10. /users/:userId/settings - 更新个人设置
 
-#### 11. /users/:userId/comments - 获取个人评论
+#### 11. /users/:userId/comments
+
+**GET - 获取个人评论**
+
+**Response**
+
+```json
+// 获取个人评论记录成功
+```
+
+
 
 #### 12. /users/:userId/history - 获取播放历史记录
 

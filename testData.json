@@ -1,4 +1,41 @@
 {
+    "user": {
+        "username": "pano",
+        "password": "123",
+        "nickname": "伟开全景",
+        "userType": 1,
+        "history": [
+            {
+                "videoId": "videoId",
+                "videoName": "videoName",
+                "author": "author",
+                "thumbnail": "缩略图地址"
+            }
+        ],
+        "comments": [
+            
+        ],
+        "options": {
+            "gender": 1,
+            "dob": "1990/07/01",
+            "email": "xxx@xxx.xxx",
+            "addr": "北京市朝阳区平乐园100号",
+            "phone": "+86 xxxxxx",
+            "tel": "010-12345678",
+            "wechat": "100000",
+            "qq": "1010101010"
+        }
+    },
+    "video": {
+        "videoId": "videoId",
+        "videoName": "视频名称",
+        "videoType": "视频类型",
+        "res": "视频流来源",
+        "thumbnail": "缩略图地址",
+        "author": "上传者",
+        "description": "视频描述",
+        "comments": []
+    },
     "注册":
     {
         "username": "pano",
