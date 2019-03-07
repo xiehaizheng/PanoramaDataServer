@@ -1,70 +1,62 @@
 {
-    "user": {
-        "username": "pano",
-        "password": "123",
-        "nickname": "伟开全景",
-        "userType": 1,
-        "history": [
-            {
-                "videoId": "videoId",
-                "videoName": "videoName",
-                "author": "author",
-                "thumbnail": "缩略图地址"
-            }
-        ],
-        "comments": [
-            
-        ],
-        "options": {
-            "gender": 1,
-            "dob": "1990/07/01",
-            "email": "xxx@xxx.xxx",
-            "addr": "北京市朝阳区平乐园100号",
-            "phone": "+86 xxxxxx",
-            "tel": "010-12345678",
-            "wechat": "100000",
-            "qq": "1010101010"
+    "token": {
+        "user": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YzdlMGFmNmE2MGNkNjI1NTBiNzAwYTYiLCJpYXQiOjE1NTE5NTM3MDYsImV4cCI6MTU1MjA0MDEwNn0.WX2Ojj6aETWIZvcyrQr4Dv4C63PuvbOaKfTDtE605Zs",
+        "author": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YzdlMGFmYWE2MGNkNjI1NTBiNzAwYTciLCJpYXQiOjE1NTE5NTM3MzIsImV4cCI6MTU1MjA0MDEzMn0.r79kvWGFFycFeA3K3Pay65sVXrEQMhVbEsobUadUU8o",
+        "admin": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YzdlMGFlZmE2MGNkNjI1NTBiNzAwYTUiLCJpYXQiOjE1NTE5NTM3NDQsImV4cCI6MTU1MjA0MDE0NH0.DU58LtQ_8DjTe5pRej_QGwkUe8U7D8Sh6MgB0S_8EmA"
+    },
+    "users": [
+        {
+            "username": "admin",
+            "password": "123",
+            "nickname": "ycaptain"
+        },
+        {
+            "username": "user",
+            "password": "123",
+            "nickname": "general"
+        },
+        {
+            "username": "author",
+            "password": "123",
+            "nickname": "author"
         }
-    },
-    "video": {
-        "videoId": "videoId",
-        "videoName": "视频名称",
-        "videoType": "视频类型",
-        "res": "视频流来源",
-        "thumbnail": "缩略图地址",
-        "author": "上传者",
-        "description": "视频描述",
-        "comments": []
-    },
-    "注册":
-    {
-        "username": "pano",
-        "password": "123",
-        "nickname": "伟开全景",
-        "userType": 1,
-        "options": {
-            "gender": 1,
-            "dob": "1990/07/01",
-            "email": "xxx@xxx.xxx",
-            "addr": "北京市朝阳区平乐园100号",
-            "phone": "+86 xxxxxx",
-            "tel": "010-12345678",
-            "wechat": "100000",
-            "qq": "1010101010"
+    ],
+    "profiles": [
+        {
+            "icon": "images/icons/admin.png",
+            "description": "管理员负责管理用户权限和网站资源",
+            "gender": "男",
+            "dob": "2018-12-02T17:57:28.556094Z",
+            "email": "cz.ycaptain@gmail.com",
+            "addr": "北京工业大学科学楼1226",
+            "phone": "+86 xxxxxxxx",
+            "tel": "010 xxxxxxxx",
+            "wechat": "abcdefg",
+            "qq": "zxcvb"
+        },
+        {
+            "icon": "images/icons/author.png",
+            "description": "上传者上传视频及进行直播",
+            "gender": "女",
+            "dob": "2018-12-02T17:57:28.556094Z",
+            "email": "cz.ycaptain@gmail.com",
+            "addr": "北京工业大学科学楼1226",
+            "phone": "+86 xxxxxxxx",
+            "tel": "010 xxxxxxxx",
+            "wechat": "abcdefg",
+            "qq": "zxcvb"
+        },
+        {
+            "icon": "images/icons/user.png",
+            "description": "用户可以享受全景视频资源和视频会议服务",
+            "gender": "男",
+            "dob": "2018-12-02T17:57:28.556094Z",
+            "email": "cz.ycaptain@gmail.com",
+            "addr": "北京工业大学科学楼1226",
+            "phone": "+86 xxxxxxxx",
+            "tel": "010 xxxxxxxx",
+            "wechat": "abcdefg",
+            "qq": "zxcvb"
         }
-    },
-    "登录":
-    {
-        "username": "pano",
-        "password": "123"
-    },
-    "上传视频":
-    {
-        "videoName": "视频名称",
-        "videoType": "视频类型",
-        "res": "视频流来源",
-        "thumbnail": "缩略图地址",
-        "author": "上传者",
-        "description": "视频描述"
-    }
+    ]
 }
